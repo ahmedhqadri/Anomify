@@ -7,18 +7,20 @@ import {
   ListView,
 } from 'react-native';
 
-import * as firebase from 'firebase';
 var styles = require('../styles.js');
 import LoginButton from '../components/LoginButton'
 import TextInputField from '../components/TextInputField'
+import MessagesScreen from '../src/MessagesScreen'
+
+
 class LoginScreen extends Component {
 
   constructor(props) {
      super(props);
-
   };
 
   render() {
+
     return (
       <View style={styles.container}>
         <LoginButton title="LOGIN"/>
@@ -28,5 +30,6 @@ class LoginScreen extends Component {
     );
   }
 }
+
 
 module.exports = LoginScreen;
